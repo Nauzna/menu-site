@@ -132,11 +132,28 @@
   
 
   <div class="tabs">
-    <button class="tab-button active" onclick="showTab('vorspeise', event)">Vorspeise</button>
-    <button class="tab-button" onclick="showTab('grill', event)">Gerichte vom Grill</button>
-    <button class="tab-button" onclick="showTab('getraenke', event)">Getränke</button>
-    <button class="tab-button" onclick="showTab('dessert', event)">Dessert</button>
+    <button class="tab-button active" onclick="showTab('vorspeise', event)">
+      <span class="lang ja">前菜</span>
+      <span class="lang en" style="display: none;">Appetizer</span>
+      <span class="lang de" style="display: none;">Vorspeise</span>
+    </button>
+    <button class="tab-button" onclick="showTab('grill', event)">
+      <span class="lang ja">串焼き</span>
+      <span class="lang en" style="display: none;">Grilled</span>
+      <span class="lang de" style="display: none;">Gerichte vom Grill</span>
+    </button>
+    <button class="tab-button" onclick="showTab('getraenke', event)">
+      <span class="lang ja">飲み物</span>
+      <span class="lang en" style="display: none;">Drinks</span>
+      <span class="lang de" style="display: none;">Getränke</span>
+    </button>
+    <button class="tab-button" onclick="showTab('dessert', event)">
+      <span class="lang ja">デザート</span>
+      <span class="lang en" style="display: none;">Dessert</span>
+      <span class="lang de" style="display: none;">Dessert</span>
+    </button>
   </div>
+  
 
   <!-- Vorspeise タブ -->
   <div id="vorspeise" class="menu-grid active">
