@@ -6,6 +6,8 @@
   <title>Kushitei Menu</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+
 
   <style>
     body {
@@ -18,6 +20,8 @@
 
 
     header {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900; /* 極太にする */
       background: #300;
       color: white;
       text-align: center;
@@ -31,6 +35,16 @@
       flex-wrap: wrap;
       background:#e0dcd5;
       border-bottom: 1px solid #ccc;
+    }
+
+    .tab-jp-font{
+      font-family: "Shippori Mincho B1";
+      font-weight: 900;
+    }
+
+    .tab-font{
+      font-family: 'Playfair Display', serif;
+      font-weight: 900; 
     }
 
     .tabs button {
@@ -102,11 +116,13 @@
     }
 
     .jp-font {
+      font-size: 17px;
+      color: black;
       font-family: "Shippori Mincho B1";
-      font-weight: 500;
+      font-weight: 800;
     }
     .price {
-      font-size: 13px;
+      font-size: 17px;
       color: #666;
       font-style: italic;
       padding: 0 10px 10px;
@@ -115,7 +131,7 @@
 </head>
 <body>
 
-  <header>Japanische Restaurant Kushitei Munchen</header>
+  <header>KUSHI-TEI München</header>
 
   <!-- 言語切り替えボタン -->
   <div class="lang-switch">
@@ -133,24 +149,24 @@
 
   <div class="tabs">
     <button class="tab-button active" onclick="showTab('vorspeise', event)">
-      <span class="lang ja">前菜</span>
-      <span class="lang en" style="display: none;">Appetizer</span>
-      <span class="lang de" style="display: none;">Vorspeise</span>
+      <span class="lang ja tab-jp-font">前菜</span>
+      <span class="lang en tab-font" style="display: none;">Appetizer</span>
+      <span class="lang de tab-font" style="display: none;">Vorspeise</span>
     </button>
     <button class="tab-button" onclick="showTab('grill', event)">
-      <span class="lang ja">串焼き</span>
-      <span class="lang en" style="display: none;">Grilled</span>
-      <span class="lang de" style="display: none;">Gerichte vom Grill</span>
+      <span class="lang ja tab-jp-font">串焼き</span>
+      <span class="lang en tab-font" style="display: none;">Grilled</span>
+      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill</span>
     </button>
     <button class="tab-button" onclick="showTab('getraenke', event)">
-      <span class="lang ja">飲み物</span>
-      <span class="lang en" style="display: none;">Drinks</span>
-      <span class="lang de" style="display: none;">Getränke</span>
+      <span class="lang ja tab-jp-font">飲み物</span>
+      <span class="lang en tab-font" style="display: none;">Drinks</span>
+      <span class="lang de tab-font" style="display: none;">Getränke</span>
     </button>
     <button class="tab-button" onclick="showTab('dessert', event)">
-      <span class="lang ja">デザート</span>
-      <span class="lang en" style="display: none;">Dessert</span>
-      <span class="lang de" style="display: none;">Dessert</span>
+      <span class="lang ja tab-jp-font">デザート</span>
+      <span class="lang en tab-font" style="display: none;">Dessert</span>
+      <span class="lang de tab-font" style="display: none;">Dessert</span>
     </button>
   </div>
   
