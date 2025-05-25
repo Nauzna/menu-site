@@ -197,8 +197,13 @@
     </button>
     <button class="tab-button" onclick="showTab('grill', event)">
       <span class="lang ja tab-jp-font">串焼き</span>
-      <span class="lang en tab-font" style="display: none;">Grilled</span>
-      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill</span>
+      <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
+      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
+    </button>
+    <button class="tab-button" onclick="showTab('teller', event)">
+      <span class="lang ja tab-jp-font">皿焼き</span>
+      <span class="lang en tab-font" style="display: none;">Grilled(Plate)</span>
+      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Teller)</span>
     </button>
     <button class="tab-button" onclick="showTab('getraenke', event)">
       <span class="lang ja tab-jp-font">飲み物</span>
@@ -234,7 +239,25 @@
       <p class="price">€4.50</p>
     </div>
     <div class="item">
-      <img src="gomaae.jpeg" alt="胡麻和え">
+      <img src="mushi-ebi.jpg" alt="蒸しエビ餃子">
+      <p>
+        <span class="lang ja jp-font">蒸しエビ餃子</span>
+        <span class="lang en item-font" style="display:none;">Deep-Fried tofu</span>
+        <span class="lang de item-font" style="display:none;">Frittierter Tofu</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="gomaae.jpg" alt="胡麻和え">
+      <p>
+        <span class="lang ja jp-font">胡麻和え</span>
+        <span class="lang en item-font" style="display:none;">Spinach with sesame sauce</span>
+        <span class="lang de item-font" style="display:none;">Spinat mit Sesamsauce</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="gyu-pon.jpg" alt="牛ポン">
       <p>
         <span class="lang ja jp-font">胡麻和え</span>
         <span class="lang en item-font" style="display:none;">Spinach with sesame sauce</span>
@@ -261,6 +284,16 @@
       <p class="price">€4.50</p>
     </div>
   </div>
+  <div class="item">
+    <img src="kimchi.jpg" alt="キムチ">
+    <p>
+      <span class="lang ja jp-font">キムチ</span>
+      <span class="lang en item-font" style="display:none;">Takoyaki (Octopus dumplings)</span>
+      <span class="lang de item-font" style="display:none;">Takoyaki (Oktopus Knodel)</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+</div>
 
   <!-- Getränke タブ -->
   <div id="getraenke" class="menu-grid">
@@ -349,10 +382,185 @@
     </div>
   </div>
 
+  <!-- Grill Teller タブ -->
+  <div id="teller" class="menu-grid">
+    <div class="item">
+      <img src="ika.jpg" alt="イカ">
+      <p>
+        <span class="lang ja jp-font">イカ</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="karubi.jpg" alt="カルビ">
+      <p>
+        <span class="lang ja jp-font">カルビ</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+  </div>
+
   <!-- Grill タブ -->
   <div id="grill" class="menu-grid">
     <div class="item">
-      <img src="abocado.jpeg" alt="アボカド">
+      <img src="mozzarela-tomato.jpg" alt="モッツァレラ＆トマト">
+      <p>
+        <span class="lang ja jp-font">モッツァレラ＆トマト</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="lamb.jpg" alt="ラム">
+      <p>
+        <span class="lang ja jp-font">ラム</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="negi.jpg" alt="ネギ">
+      <p>
+        <span class="lang ja jp-font">ネギ</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="saba.jpg" alt="鯖">
+      <p>
+        <span class="lang ja jp-font">鯖</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="sasami.jpg" alt="ささみ">
+      <p>
+        <span class="lang ja jp-font">ささみ</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="shiromizakana.jpg" alt="白身魚">
+      <p>
+        <span class="lang ja jp-font">白身魚</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="shishamo.jpg" alt="ししゃも">
+      <p>
+        <span class="lang ja jp-font">ししゃも</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="shishitou.jpg" alt="ししとう">
+      <p>
+        <span class="lang ja jp-font">ししとう</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="shitake.jpg" alt="マッシュルーム">
+      <p>
+        <span class="lang ja jp-font">マッシュルーム</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="tomato.jpg" alt="トマト">
+      <p>
+        <span class="lang ja jp-font">トマト</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="tsumire.jpg" alt="つみれ">
+      <p>
+        <span class="lang ja jp-font">つみれ</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="zukkini.jpg" alt="ズッキーニ">
+      <p>
+        <span class="lang ja jp-font">ズッキーニ</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="leba.jpg" alt="レバー">
+      <p>
+        <span class="lang ja jp-font">レバー</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="ebi.jpg" alt="海老">
+      <p>
+        <span class="lang ja jp-font">海老</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="kamo.jpg" alt="鴨">
+      <p>
+        <span class="lang ja jp-font">鴨</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="maguro.jpg" alt="マグロ">
+      <p>
+        <span class="lang ja jp-font">マグロ</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="enokibacon.jpg" alt="えのきベーコン">
+      <p>
+        <span class="lang ja jp-font">えのきベーコン</span>
+        <span class="lang en item-font" style="display:none;">Shrinp</span>
+        <span class="lang de item-font" style="display:none;">Garnele</span>
+      </p>
+      <p class="price">€4.50</p>
+    </div>
+    <div class="item">
+      <img src="abocado.jpg" alt="アボカド">
       <p>
         <span class="lang ja jp-font">アボカド（２本）</span>
         <span class="lang en item-font" style="display:none;">Abocado</span>
@@ -393,15 +601,6 @@
         <span class="lang ja jp-font">つくね（２本）</span>
         <span class="lang en item-font" style="display:none;">Meatballs</span>
         <span class="lang de item-font" style="display:none;">Fleischballchen</span>
-      </p>
-      <p class="price">€4.50</p>
-    </div>
-    <div class="item">
-      <img src="butabara.jpg" alt="豚バラ串">
-      <p>
-        <span class="lang ja jp-font">豚バラ串（2本）</span>
-        <span class="lang en item-font" style="display:none;">Butabara</span>
-        <span class="lang de item-font" style="display:none;">Butabara</span>
       </p>
       <p class="price">€4.50</p>
     </div>
