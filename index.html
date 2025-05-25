@@ -766,28 +766,18 @@
   
   <script>
     function showTab(tabId, event) {
-      // 1. すべてのタブコンテンツを非表示にする
-      const allTabs = document.querySelectorAll('.tab-content');
-      allTabs.forEach(tab => tab.style.display = 'none');
+      // メニューグリッドの表示切り替え
+      document.querySelectorAll('.menu-grid').forEach(grid => {
+        grid.classList.remove('active');
+      });
+      document.getElementById(tabId).classList.add('active');
 
-      // 2. 指定のタブを表示
-      const selectedTab = document.getElementById(tabId);
-      if (selectedTab) selectedTab.style.display = 'block';
-
-      // 3. すべてのボタンから active を外す
-      const allButtons = document.querySelectorAll('.tab-button');
-      allButtons.forEach(button => button.classList.remove('active'));
-
-      // 4. 押されたボタンに active をつける
-      if (event && event.currentTarget) {
-        event.currentTarget.classList.add('active');
-      }
+      // タブボタンの active クラス切り替え
+      document.querySelectorAll('.tab-button').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      event.currentTarget.classList.add('active'); 
     }
-
-    // 初期表示タブの処理（必要に応じて）
-    document.addEventListener('DOMContentLoaded', () => {
-      showTab('vorspeise', { currentTarget: document.querySelector('.tab-button.active') });
-    });
 
 
 
