@@ -224,10 +224,45 @@
       <span class="lang en tab-font" style="display: none;">Dessert</span>
       <span class="lang de tab-font" style="display: none;">Dessert</span>
     </button>
-    <button class="tab-button" onclick="showTab('getraenke', event)">
-      <span class="lang ja tab-jp-font">飲み物</span>
-      <span class="lang en tab-font" style="display: none;">Drinks</span>
-      <span class="lang de tab-font" style="display: none;">Getränke</span>
+    <button class="tab-button" onclick="showTab('cold-drinks', event)">
+      <span class="lang ja tab-jp-font">冷たい飲み物</span>
+      <span class="lang en tab-font" style="display: none;">Cold Drinks</span>
+      <span class="lang de tab-font" style="display: none;">Kalte Getränke</span>
+    </button>
+    <button class="tab-button" onclick="showTab('hot-drinks', event)">
+      <span class="lang ja tab-jp-font">温かい飲み物</span>
+      <span class="lang en tab-font" style="display: none;">Hot Drinks</span>
+      <span class="lang de tab-font" style="display: none;">Warme Getränke</span>
+    </button>
+    <button class="tab-button" onclick="showTab('beer', event)">
+      <span class="lang ja tab-jp-font">ビール</span>
+      <span class="lang en tab-font" style="display: none;">Beer</span>
+      <span class="lang de tab-font" style="display: none;">Bier</span>
+    </button>
+    <button class="tab-button" onclick="showTab('wine', event)">
+      <span class="lang ja tab-jp-font">ワイン</span>
+      <span class="lang en tab-font" style="display: none;">Wine</span>
+      <span class="lang de tab-font" style="display: none;">Wein</span>
+    </button>
+    <button class="tab-button" onclick="showTab('shochu', event)">
+      <span class="lang ja tab-jp-font">焼酎</span>
+      <span class="lang en tab-font" style="display: none;">Shochu</span>
+      <span class="lang de tab-font" style="display: none;">Shochu</span>
+    </button>
+    <button class="tab-button" onclick="showTab('sake', event)">
+      <span class="lang ja tab-jp-font">日本酒</span>
+      <span class="lang en tab-font" style="display: none;">Sake</span>
+      <span class="lang de tab-font" style="display: none;">Sake (Reiswein)</span>
+    </button>
+    <button class="tab-button" onclick="showTab('chuhai', event)">
+      <span class="lang ja tab-jp-font">酎ハイ</span>
+      <span class="lang en tab-font" style="display: none;">Chuhai</span>
+      <span class="lang de tab-font" style="display: none;">Chuhai</span>
+    </button>
+    <button class="tab-button" onclick="showTab('highball', event)">
+      <span class="lang ja tab-jp-font">ハイボール</span>
+      <span class="lang en tab-font" style="display: none;">Highball</span>
+      <span class="lang de tab-font" style="display: none;">Highball</span>
     </button>
   </div>
   
@@ -700,69 +735,138 @@
   </div>
 </div>
 
-<!-- Getränke タブ -->
-<div id="getraenke" class="menu-grid">
-  <div>
-    <h2 class="category-heading">
-      <span class="lang ja tab-jp-font">ビール</span>
-      <span class="lang en tab-font" style="display: none;">Beer</span>
-      <span class="lang de tab-font" style="display: none;">Bier</span>
-    </h2>
-    <div class="item-row">
-      <img src="beer.jpg" alt="生ビール">
-      <p>
-        <span class="lang ja jp-font">生ビール</span>
-        <span class="lang en item-font" style="display:none;">Draft Beer</span>
-        <span class="lang de item-font" style="display:none;">Bier vom Fass</span>
-      </p>
-      <p class="price">€4.50</p>
-    </div>
-  </div>
-  <div>
-    <h2 class="category-heading">
-      <span class="lang ja tab-jp-font">冷たい飲み物</span>
-      <span class="lang en tab-font" style="display: none;">Cold Drinks</span>
-      <span class="lang de tab-font" style="display: none;">Kalte Getränke</span>
-    </h2>
-      <div class="item-row">
-        <img src="oolong-tee.jpeg" alt="ウーロン茶">
+<!-- cold-drinks タブ -->
+<div id="cold-drinks" class="menu-grid">
+  <div class="item">
+    <img src="oolong-tee.jpeg" alt="ウーロン茶">
         <p>
           <span class="lang ja jp-font">ウーロン茶</span>
           <span class="lang en item-font" style="display:none;">Oolong Tea</span>
           <span class="lang de item-font" style="display:none;">Oolong Tee</span>
         </p>
         <p class="price">€4.50</p>
-      </div>
-      <div class="item-row">
-        <img src="green-tee.jpeg" alt="緑茶">
-        <p>
-          <span class="lang ja jp-font">緑茶</span>
-          <span class="lang en item-font" style="display:none;">Green Tea</span>
-          <span class="lang de item-font" style="display:none;">Grüner Tee</span>
-        </p>
-        <p class="price">€4.50</p>
-      </div>
-      <div class="item-row">
-        <img src="highball.jpeg" alt="ハイボール">
-        <p>
-          <span class="lang ja jp-font">ハイボール</span>
-          <span class="lang en item-font" style="display:none;">Highball</span>
-          <span class="lang de item-font" style="display:none;">Highball</span>
-        </p>
-        <p class="price">€4.50</p>
-      </div>
-      <div class="item-row">
-        <img src="saft-schorle.jpg" alt="炭酸ジュース">
-        <p>
-          <span class="lang ja jp-font">炭酸ジュース</span>
-          <span class="lang en item-font" style="display:none;">Carbonated juice</span>
-          <span class="lang de item-font" style="display:none;">Saft Schorle</span>
-        </p>
-        <p class="price">€4.50</p>
-      </div>
-    </div>
-  
   </div>
+  <div class="item">
+    <img src="green-tee.jpeg" alt="緑茶">
+    <p>
+      <span class="lang ja jp-font">緑茶</span>
+      <span class="lang en item-font" style="display:none;">Green Tea</span>
+      <span class="lang de item-font" style="display:none;">Grüner Tee</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+  <div class="item">
+    <img src="saft-schorle.jpg" alt="炭酸ジュース">
+    <p>
+      <span class="lang ja jp-font">炭酸ジュース</span>
+      <span class="lang en item-font" style="display:none;">Carbonated juice</span>
+      <span class="lang de item-font" style="display:none;">Saft Schorle</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div> 
+</div>
+
+<!-- warm-drinks タブ -->
+<div id="warm-drinks" class="menu-grid">
+  <div class="item">
+    <img src="oolong-tee.jpeg" alt="ウーロン茶">
+        <p>
+          <span class="lang ja jp-font">ウーロン茶</span>
+          <span class="lang en item-font" style="display:none;">Oolong Tea</span>
+          <span class="lang de item-font" style="display:none;">Oolong Tee</span>
+        </p>
+        <p class="price">€4.50</p>
+  </div>
+  <div class="item">
+    <img src="green-tee.jpeg" alt="緑茶">
+    <p>
+      <span class="lang ja jp-font">緑茶</span>
+      <span class="lang en item-font" style="display:none;">Green Tea</span>
+      <span class="lang de item-font" style="display:none;">Grüner Tee</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+</div>
+
+<!-- beer タブ -->
+<div id="beer" class="menu-grid">
+  <div class="item">
+    <img src="beer.jpg" alt="ビール">
+        <p>
+          <span class="lang ja jp-font">ビール</span>
+          <span class="lang en item-font" style="display:none;">Beer</span>
+          <span class="lang de item-font" style="display:none;">Bier</span>
+        </p>
+        <p class="price">€4.50</p>
+  </div>
+</div>
+
+<!-- wine タブ -->
+<div id="wine" class="menu-grid">
+  <div class="item">
+    <img src="red-wine.jpg" alt="赤ワイン">
+        <p>
+          <span class="lang ja jp-font">赤ワイン</span>
+          <span class="lang en item-font" style="display:none;">Red Wine</span>
+          <span class="lang de item-font" style="display:none;">Rote Wein</span>
+        </p>
+        <p class="price">€4.50</p>
+  </div>
+</div>
+
+<!-- shochu タブ -->
+<div id="shochu" class="menu-grid">
+  <div class="item">
+    <img src="red-wine.jpg" alt="赤ワイン">
+        <p>
+          <span class="lang ja jp-font">赤ワイン</span>
+          <span class="lang en item-font" style="display:none;">Red Wine</span>
+          <span class="lang de item-font" style="display:none;">Rote Wein</span>
+        </p>
+        <p class="price">€4.50</p>
+  </div>
+</div>
+
+<!-- sake タブ -->
+<div id="sake" class="menu-grid">
+  <div class="item">
+    <img src="red-wine.jpg" alt="赤ワイン">
+        <p>
+          <span class="lang ja jp-font">赤ワイン</span>
+          <span class="lang en item-font" style="display:none;">Red Wine</span>
+          <span class="lang de item-font" style="display:none;">Rote Wein</span>
+        </p>
+        <p class="price">€4.50</p>
+  </div>
+</div>
+
+<!-- chuhai タブ -->
+<div id="chuhai" class="menu-grid">
+  <div class="item">
+    <img src="red-wine.jpg" alt="赤ワイン">
+        <p>
+          <span class="lang ja jp-font">赤ワイン</span>
+          <span class="lang en item-font" style="display:none;">Red Wine</span>
+          <span class="lang de item-font" style="display:none;">Rote Wein</span>
+        </p>
+        <p class="price">€4.50</p>
+  </div>
+</div>
+
+<!-- highball タブ -->
+<div id="highball" class="menu-grid">
+  <div class="item">
+    <img src="red-wine.jpg" alt="赤ワイン">
+        <p>
+          <span class="lang ja jp-font">赤ワイン</span>
+          <span class="lang en item-font" style="display:none;">Red Wine</span>
+          <span class="lang de item-font" style="display:none;">Rote Wein</span>
+        </p>
+        <p class="price">€4.50</p>
+  </div>
+</div>
+
+
   
   <script>
     function showTab(tabId, event) {
