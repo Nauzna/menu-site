@@ -209,6 +209,11 @@
       <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
       <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
     </button>
+    <button class="tab-button" onclick="showTab('sushi', event)">
+      <span class="lang ja tab-jp-font">寿司</span>
+      <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
+      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
+    </button>
     <button class="tab-button" onclick="showTab('frittierter', event)">
       <span class="lang ja tab-jp-font">揚げ物</span>
       <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
@@ -216,6 +221,11 @@
     </button>
     <button class="tab-button" onclick="showTab('donburi', event)">
       <span class="lang ja tab-jp-font">丼もの</span>
+      <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
+      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
+    </button>
+    <button class="tab-button" onclick="showTab('rice&noodle', event)">
+      <span class="lang ja tab-jp-font">ご飯＆麺</span>
       <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
       <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
     </button>
@@ -241,6 +251,11 @@
     </button>
     <button class="tab-button" onclick="showTab('wine', event)">
       <span class="lang ja tab-jp-font">ワイン</span>
+      <span class="lang en tab-font" style="display: none;">Wine</span>
+      <span class="lang de tab-font" style="display: none;">Wein</span>
+    </button>
+    <button class="tab-button" onclick="showTab('plumwine', event)">
+      <span class="lang ja tab-jp-font">梅酒</span>
       <span class="lang en tab-font" style="display: none;">Wine</span>
       <span class="lang de tab-font" style="display: none;">Wein</span>
     </button>
@@ -288,7 +303,7 @@
       <p class="price">€4.50</p>
     </div>
     <div class="item">
-      <img src="mushi-ebi.jpg" alt="蒸しエビ餃子">
+      <img src="mushi-ebi.jpeg" alt="蒸しエビ餃子">
       <p>
         <span class="lang ja jp-font">蒸しエビ餃子</span>
         <span class="lang en item-font" style="display:none;">Deep-Fried tofu</span>
@@ -367,6 +382,15 @@
     <img src="shakeflake-salad.jpg" alt="シャケフレークサラダ">
     <p>
       <span class="lang ja jp-font">シャケフレークサラダ</span>
+      <span class="lang en item-font" style="display:none;">Tiramisu</span>
+      <span class="lang de item-font" style="display:none;">Tiramisu</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+  <div class="item">
+    <img src="butashabu-salad.jpg" alt="豚しゃぶサラダ">
+    <p>
+      <span class="lang ja jp-font">豚しゃぶサラダ</span>
       <span class="lang en item-font" style="display:none;">Tiramisu</span>
       <span class="lang de item-font" style="display:none;">Tiramisu</span>
     </p>
@@ -622,6 +646,56 @@
   </div>
 </div>
 
+<!-- Sushi タブ -->
+<div id="sushi" class="menu-grid">
+  <div class="item">
+    <img src="tsuna-roll.jpeg" alt="鉄火巻き">
+    <p>
+      <span class="lang ja jp-font">鉄火巻き</span>
+      <span class="lang en item-font" style="display:none;">Mochi icecream</span>
+      <span class="lang de item-font" style="display:none;">Mochi Eis</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+  <div class="item">
+    <img src="shake_maki.jpeg" alt="しゃけ巻き">
+    <p>
+      <span class="lang ja jp-font">鉄火巻き</span>
+      <span class="lang en item-font" style="display:none;">Mochi icecream</span>
+      <span class="lang de item-font" style="display:none;">Mochi Eis</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+  <div class="item">
+    <img src="kappa_maki.jpeg" alt="かっぱ巻き">
+    <p>
+      <span class="lang ja jp-font">かっぱ巻き</span>
+      <span class="lang en item-font" style="display:none;">Mochi icecream</span>
+      <span class="lang de item-font" style="display:none;">Mochi Eis</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+  <div class="item">
+    <img src="maguro_nigiri.jpeg" alt="マグロ握り">
+    <p>
+      <span class="lang ja jp-font">マグロ握り</span>
+      <span class="lang en item-font" style="display:none;">Tiramisu</span>
+      <span class="lang de item-font" style="display:none;">Tiramisu</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+  <div class="item">
+    <img src="shake_nigiri.jpeg" alt="シャケ握り">
+    <p>
+      <span class="lang ja jp-font">シャケ握り</span>
+      <span class="lang en item-font" style="display:none;">Tiramisu</span>
+      <span class="lang de item-font" style="display:none;">Tiramisu</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+  
+</div>
+
 <!-- Frittierter タブ -->
 <div id="frittierter" class="menu-grid">
   <div class="item">
@@ -646,6 +720,15 @@
     <img src="kabocha-qrokette.jpg" alt="かぼちゃコロッケ">
     <p>
       <span class="lang ja jp-font">かぼちゃコロッケ</span>
+      <span class="lang en item-font" style="display:none;">Tiramisu</span>
+      <span class="lang de item-font" style="display:none;">Tiramisu</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+  <div class="item">
+    <img src="hirekatsu.jpeg" alt="ヒレカツ">
+    <p>
+      <span class="lang ja jp-font">ヒレカツ</span>
       <span class="lang en item-font" style="display:none;">Tiramisu</span>
       <span class="lang de item-font" style="display:none;">Tiramisu</span>
     </p>
@@ -692,6 +775,15 @@
     <p class="price">€4.50</p>
   </div>
   <div class="item">
+    <img src="buta-don.jpg" alt="豚丼">
+    <p>
+      <span class="lang ja jp-font">豚丼</span>
+      <span class="lang en item-font" style="display:none;">Tiramisu</span>
+      <span class="lang de item-font" style="display:none;">Tiramisu</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+  <div class="item">
     <img src="sake-tarutaru-don.jpg" alt="しゃけたる丼">
     <p>
       <span class="lang ja jp-font">しゃけたる丼</span>
@@ -710,6 +802,37 @@
     <p class="price">€4.50</p>
   </div>
 
+</div>
+
+<!-- Rice & Noodle タブ -->
+<div id="rice&noodle" class="menu-grid">
+  <div class="item">
+    <img src="miso-soup.jpeg" alt="味噌汁">
+    <p>
+      <span class="lang ja jp-font">味噌汁</span>
+      <span class="lang en item-font" style="display:none;">Mochi icecream</span>
+      <span class="lang de item-font" style="display:none;">Mochi Eis</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+  <div class="item">
+    <img src="rice.jpeg" alt="白米">
+    <p>
+      <span class="lang ja jp-font">白米</span>
+      <span class="lang en item-font" style="display:none;">Tiramisu</span>
+      <span class="lang de item-font" style="display:none;">Tiramisu</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+  <div class="item">
+    <img src="udon.jpeg" alt="うどん">
+    <p>
+      <span class="lang ja jp-font">うどん</span>
+      <span class="lang en item-font" style="display:none;">Tiramisu</span>
+      <span class="lang de item-font" style="display:none;">Tiramisu</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
 </div>
 
 
@@ -738,6 +861,34 @@
 <!-- cold-drinks タブ -->
 <div id="cold-drinks" class="menu-grid">
   <div class="item">
+    <img src="water.jpeg" alt="水グラス(300ml)">
+        <p>
+          <span class="lang ja jp-font">水グラス(300ml)</span>
+          <span class="lang en item-font" style="display:none;">Oolong Tea</span>
+          <span class="lang de item-font" style="display:none;">Oolong Tee</span>
+        </p>
+        <p class="price">€4.50</p>
+  </div>
+  <div class="item">
+    <img src="water-mit.jpeg" alt="炭酸水（ボトル）">
+        <p>
+          <span class="lang ja jp-font">水グラス(300ml)</span>
+          <span class="lang en item-font" style="display:none;">Oolong Tea</span>
+          <span class="lang de item-font" style="display:none;">Oolong Tee</span>
+        </p>
+        <p class="price">€4.50</p>
+  </div>
+  <div class="item">
+    <img src="water-still.jpeg" alt="水（ボトル）">
+        <p>
+          <span class="lang ja jp-font">水グラス(300ml)</span>
+          <span class="lang en item-font" style="display:none;">Oolong Tea</span>
+          <span class="lang de item-font" style="display:none;">Oolong Tee</span>
+        </p>
+        <p class="price">€4.50</p>
+  </div>
+<div id="cold-drinks" class="menu-grid">
+  <div class="item">
     <img src="oolong-tee.jpeg" alt="ウーロン茶">
         <p>
           <span class="lang ja jp-font">ウーロン茶</span>
@@ -759,6 +910,15 @@
     <img src="saft-schorle.jpg" alt="炭酸ジュース">
     <p>
       <span class="lang ja jp-font">炭酸ジュース</span>
+      <span class="lang en item-font" style="display:none;">Carbonated juice</span>
+      <span class="lang de item-font" style="display:none;">Saft Schorle</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div> 
+  <div class="item">
+    <img src="ramune.jpeg" alt="ラムネ">
+    <p>
+      <span class="lang ja jp-font">ラムネss</span>
       <span class="lang en item-font" style="display:none;">Carbonated juice</span>
       <span class="lang de item-font" style="display:none;">Saft Schorle</span>
     </p>
@@ -813,13 +973,47 @@
         <p class="price">€4.50</p>
   </div>
 </div>
+<div id="wine" class="menu-grid">
+  <div class="item">
+    <img src="Chablis.jpeg" alt="シャブリス">
+        <p>
+          <span class="lang ja jp-font">シャブリス</span>
+          <span class="lang en item-font" style="display:none;">Red Wine</span>
+          <span class="lang de item-font" style="display:none;">Rote Wein</span>
+        </p>
+        <p class="price">€4.50</p>
+  </div>
+</div>
+<!-- plum wine タブ -->
+<div id="plumwine" class="menu-grid">
+  <div class="item">
+    <img src="umeshu-rock.jpeg" alt="梅酒ロック">
+        <p>
+          <span class="lang ja jp-font">梅酒ロック</span>
+          <span class="lang en item-font" style="display:none;">Red Wine</span>
+          <span class="lang de item-font" style="display:none;">Rote Wein</span>
+        </p>
+        <p class="price">€4.50</p>
+  </div>
+</div>
 
 <!-- shochu タブ -->
 <div id="shochu" class="menu-grid">
   <div class="item">
-    <img src="red-wine.jpg" alt="赤ワイン">
+    <img src="kurokiri-glass.jpeg" alt="黒霧島（芋）4cl">
         <p>
-          <span class="lang ja jp-font">赤ワイン</span>
+          <span class="lang ja jp-font">黒霧島（芋）4cl</span>
+          <span class="lang en item-font" style="display:none;">Red Wine</span>
+          <span class="lang de item-font" style="display:none;">Rote Wein</span>
+        </p>
+        <p class="price">€4.50</p>
+  </div>
+</div>
+<div id="shochu" class="menu-grid">
+  <div class="item">
+    <img src="shochu-orange.jpeg" alt="オレンジ酎ハイ">
+        <p>
+          <span class="lang ja jp-font">オレンジ酎ハイ</span>
           <span class="lang en item-font" style="display:none;">Red Wine</span>
           <span class="lang de item-font" style="display:none;">Rote Wein</span>
         </p>
@@ -830,14 +1024,34 @@
 <!-- sake タブ -->
 <div id="sake" class="menu-grid">
   <div class="item">
-    <img src="red-wine.jpg" alt="赤ワイン">
+    <img src="sake.jpeg" alt="日本酒 120ml / 240ml">
         <p>
-          <span class="lang ja jp-font">赤ワイン</span>
+          <span class="lang ja jp-font">日本酒 120ml / 240ml</span>
           <span class="lang en item-font" style="display:none;">Red Wine</span>
           <span class="lang de item-font" style="display:none;">Rote Wein</span>
         </p>
         <p class="price">€4.50</p>
   </div>
+<div id="sake" class="menu-grid">
+  <div class="item">
+    <img src="dassai-mini.jpeg" alt="獺祭">
+        <p>
+          <span class="lang ja jp-font">獺祭</span>
+          <span class="lang en item-font" style="display:none;">Red Wine</span>
+          <span class="lang de item-font" style="display:none;">Rote Wein</span>
+        </p>
+        <p class="price">€4.50</p>
+  </div>
+  <div id="sake" class="menu-grid">
+    <div class="item">
+      <img src="kubota_mini.jpeg" alt="久保田">
+          <p>
+            <span class="lang ja jp-font">久保田</span>
+            <span class="lang en item-font" style="display:none;">Red Wine</span>
+            <span class="lang de item-font" style="display:none;">Rote Wein</span>
+          </p>
+          <p class="price">€4.50</p>
+    </div>
 </div>
 
 <!-- chuhai タブ -->
