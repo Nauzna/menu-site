@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
 
-
+  <!-- ホームページのデザイン系 -->
   <style>
     body {
       font-family: 'Noto Serif JP', serif;
@@ -231,6 +231,11 @@
       <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
       <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
     </button>
+    <button class="tab-button" onclick="showTab('kushitei-menu', event)">
+      <span class="lang ja tab-jp-font">串亭メニュー</span>
+      <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
+      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
+    </button>
     <button class="tab-button" onclick="showTab('dessert', event)">
       <span class="lang ja tab-jp-font">デザート</span>
       <span class="lang en tab-font" style="display: none;">Dessert</span>
@@ -287,7 +292,7 @@
   <!-- Vorspeise タブ -->
   <div id="vorspeise" class="menu-grid active">
     <div class="item">
-      <img src="edamame.jpg" alt="枝豆">
+      <img src="edamame.jpg" alt="枝豆"><!-- 写真 -->
       <p>
         <span class="lang ja jp-font">枝豆</span>
         <span class="lang en item-font" style="display:none;">Edamame</span>
@@ -821,6 +826,45 @@
     <img src="rice.jpeg" alt="白米">
     <p>
       <span class="lang ja jp-font">白米</span>
+      <span class="lang en item-font" style="display:none;">Tiramisu</span>
+      <span class="lang de item-font" style="display:none;">Tiramisu</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+  <div class="item">
+    <img src="udon.jpeg" alt="うどん">
+    <p>
+      <span class="lang ja jp-font">うどん</span>
+      <span class="lang en item-font" style="display:none;">Tiramisu</span>
+      <span class="lang de item-font" style="display:none;">Tiramisu</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+</div>
+
+<!-- 串亭メニュー タブ -->
+<div id="kushitei-menu" class="menu-grid">
+  <div class="item">
+    <img src="miso-soup.jpeg" alt="味噌汁">
+    <p>
+      <span class="lang ja jp-font">味噌汁</span>
+      <span class="lang en item-font" style="display:none;">Mochi icecream</span>
+      <span class="lang de item-font" style="display:none;">Mochi Eis</span>
+    </p>
+  </div>
+  <div class="item">
+    <img src="rice.jpeg" alt="白米">
+    <p>
+      <span class="lang ja jp-font">白米</span>
+      <span class="lang en item-font" style="display:none;">Tiramisu</span>
+      <span class="lang de item-font" style="display:none;">Tiramisu</span>
+    </p>
+    <p class="price">€4.50</p>
+  </div>
+  <div class="item">
+    <img src="udon.jpeg" alt="うどん">
+    <p>
+      <span class="lang ja jp-font">うどん</span>
       <span class="lang en item-font" style="display:none;">Tiramisu</span>
       <span class="lang de item-font" style="display:none;">Tiramisu</span>
     </p>
