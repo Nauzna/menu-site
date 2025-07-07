@@ -8,8 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
 
-  <!-- ホームページのデザイン系 -->
+  <!-- ホームページのデザイン -->
   <style>
+    /* 全体のスタイル */
     body {
       font-family: 'Noto Serif JP', serif;
       margin: 0;
@@ -18,7 +19,7 @@
       color: #333;
     }
 
-
+    /* ヘッダーのスタイル */
     header {
       font-family: 'Playfair Display', serif;
       font-weight: 900; /* 極太にする */
@@ -29,6 +30,7 @@
       font-size: 24px;
     }
 
+    /* タブのスタイル */
     .tabs {
       display: flex;
       overflow-x: auto;
@@ -40,16 +42,19 @@
       gap: 8px; /* ボタン間の隙間 */
     }
 
+    /* タブのフォントスタイル（日本語バージョン） */
     .tab-jp-font{
       font-family: "Shippori Mincho B1";
       font-weight: 900;
     }
 
+    /* タブのフォントスタイル */
     .tab-font{
       font-family: 'Playfair Display', serif;
       font-weight: 900; 
     }
 
+    /* タブボタンのスタイル */
     .tab-button {
       flex: 0 0 auto;
       padding: 0.5em 1em;
@@ -60,18 +65,21 @@
       white-space: nowrap;
     }
 
+    /* タブボタンのアクティブ状態のスタイル */
     .tab-button.active {
       border-bottom: 2px solid #800000;
       color: #800000;
     }
 
+    /* 言語切り替えボタンのスタイル（全体） */
     .lang-switch {
       display: flex;
       justify-content: center;
       gap: 12px;
       margin: 10px 0;
     }
-
+    
+    /* 言語切り替えボタンのスタイル（個別） */
     .lang-btn {
       background: none;
       border: none;
@@ -79,18 +87,20 @@
       padding: 5px;
     }
 
+    /* 言語切り替えボタンの画像のスタイル */
     .lang-btn img {
       border-radius: 50%;
       border: 2px solid transparent;
       transition: border 0.2s ease;
     }
 
+    /* 言語切り替えボタンのアクティブ状態のスタイル */
     .lang-btn.active img {
       transform: scale(1.1);
       transition: transform 0.3s ease, border 0.3s ease;
     }
 
-    
+    /* メニューグリッドのスタイル */
     .menu-grid {
       display: none;
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -98,10 +108,12 @@
       padding: 12px;
     }
 
+    /* メニューグリッドのアクティブ状態のスタイル */
     .menu-grid.active {
       display: grid;
     }
 
+    /* メニューアイテムのスタイル */
     .item {
       border: 1px solid #ccc;
       border-radius: 10px;
@@ -109,18 +121,14 @@
       background-color: #f8f8f8;
     }
 
+    /* メニューアイテムの画像スタイル */
     .item img {
       width: 100%;
       height: auto;
       display: block;
     }
 
-    .item p {
-      margin: 0;
-      padding: 10px;
-      font-size: 14px;
-    }
-
+    /* メニューアイテムの名前スタイル（日本語バージョン） */
     .jp-font {
       font-size: 17px;
       color: black;
@@ -128,6 +136,7 @@
       font-weight: 800;
     }
 
+    /* メニューアイテムの名前スタイル（英語・ドイツ語バージョン） */
     .item-font{
       font-size: 17px;
       color: black;
@@ -135,25 +144,15 @@
       font-weight: 800;
     }
 
-    .price {
-      font-size: 20px;
-      color: #666;
-      font-style: italic;
-      font-weight: 800;
-      padding: 0 10px 10px;
+    /* メニューアイテムの価格テキストのスタイル */
+    .item p {
+      margin: 0;
+      padding: 10px;
+      font-size: 14px;
     }
 
-    .category-heading {
-      /*
-      display: block;
-      margin: 0 0 16px 0;
-      padding-bottom: 8px; /* 明示的に空間を与える */
-      display: grid;
-      grid-template-columns: 1fr; /* 1列に限定 */
-      gap: 2rem;
-    }
-
-    .item-row {
+    
+    /* .item-row {
       display: flex;
       justify-content: center;
       gap: 1.5rem;
@@ -170,11 +169,14 @@
       display: block;
     }
 
+
     .item-row p {
       margin: 0;
       padding: 10px;
       font-size: 14px;
-    }
+    } 
+    */
+    
   </style>
 </head>
 <body>
@@ -196,102 +198,98 @@
   
 
   <div class="tabs">
-    <button class="tab-button active" onclick="showTab('vorspeise', event)">
-      <span class="lang ja tab-jp-font">前菜</span>
-      <span class="lang en tab-font" style="display: none;">Appetizer</span>
-      <span class="lang de tab-font" style="display: none;">Vorspeise</span>
-    </button>
-    <button class="tab-button" onclick="showTab('salad', event)">
-      <span class="lang ja tab-jp-font">サラダ</span>
-      <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
-      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
-    </button>
-    <button class="tab-button" onclick="showTab('grill', event)">
-      <span class="lang ja tab-jp-font">炭火焼き</span>
-      <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
-      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
-    </button>
-    <button class="tab-button" onclick="showTab('sushi', event)">
-      <span class="lang ja tab-jp-font">寿司</span>
-      <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
-      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
-    </button>
-    <button class="tab-button" onclick="showTab('frittierter', event)">
-      <span class="lang ja tab-jp-font">揚げ物</span>
-      <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
-      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
-    </button>
-    <button class="tab-button" onclick="showTab('donburi', event)">
-      <span class="lang ja tab-jp-font">丼もの</span>
-      <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
-      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
-    </button>
-    <button class="tab-button" onclick="showTab('rice&noodle', event)">
-      <span class="lang ja tab-jp-font">ご飯＆麺</span>
-      <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
-      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
-    </button>
-    <button class="tab-button" onclick="showTab('kushitei-menu', event)">
-      <span class="lang ja tab-jp-font">串亭メニュー</span>
-      <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
-      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
-    </button>
-     <button class="tab-button" onclick="showTab('Tsuru-menu', event)">
-      <span class="lang ja tab-jp-font">鶴メニュー</span>
-      <span class="lang en tab-font" style="display: none;">Grilled(stick)</span>
-      <span class="lang de tab-font" style="display: none;">Gerichte vom Grill(Stange)</span>
-    </button>
-    <button class="tab-button" onclick="showTab('dessert', event)">
-      <span class="lang ja tab-jp-font">デザート</span>
-      <span class="lang en tab-font" style="display: none;">Dessert</span>
-      <span class="lang de tab-font" style="display: none;">Dessert</span>
-    </button>
-    <button class="tab-button" onclick="showTab('cold-drinks', event)">
-      <span class="lang ja tab-jp-font">冷たい飲み物</span>
-      <span class="lang en tab-font" style="display: none;">Cold Drinks</span>
-      <span class="lang de tab-font" style="display: none;">Kalte Getränke</span>
-    </button>
-    <button class="tab-button" onclick="showTab('hot-drinks', event)">
-      <span class="lang ja tab-jp-font">温かい飲み物</span>
-      <span class="lang en tab-font" style="display: none;">Hot Drinks</span>
-      <span class="lang de tab-font" style="display: none;">Warme Getränke</span>
-    </button>
-    <button class="tab-button" onclick="showTab('beer', event)">
-      <span class="lang ja tab-jp-font">ビール</span>
-      <span class="lang en tab-font" style="display: none;">Beer</span>
-      <span class="lang de tab-font" style="display: none;">Bier</span>
-    </button>
-    <button class="tab-button" onclick="showTab('wine', event)">
-      <span class="lang ja tab-jp-font">ワイン</span>
-      <span class="lang en tab-font" style="display: none;">Wine</span>
-      <span class="lang de tab-font" style="display: none;">Wein</span>
-    </button>
-    <button class="tab-button" onclick="showTab('plumwine', event)">
-      <span class="lang ja tab-jp-font">梅酒</span>
-      <span class="lang en tab-font" style="display: none;">Wine</span>
-      <span class="lang de tab-font" style="display: none;">Wein</span>
-    </button>
-    <button class="tab-button" onclick="showTab('shochu', event)">
-      <span class="lang ja tab-jp-font">焼酎</span>
-      <span class="lang en tab-font" style="display: none;">Shochu</span>
-      <span class="lang de tab-font" style="display: none;">Shochu</span>
-    </button>
-    <button class="tab-button" onclick="showTab('sake', event)">
-      <span class="lang ja tab-jp-font">日本酒</span>
-      <span class="lang en tab-font" style="display: none;">Sake</span>
-      <span class="lang de tab-font" style="display: none;">Sake (Reiswein)</span>
-    </button>
-    <button class="tab-button" onclick="showTab('chuhai', event)">
-      <span class="lang ja tab-jp-font">酎ハイ</span>
-      <span class="lang en tab-font" style="display: none;">Chuhai</span>
-      <span class="lang de tab-font" style="display: none;">Chuhai</span>
-    </button>
-    <button class="tab-button" onclick="showTab('highball', event)">
-      <span class="lang ja tab-jp-font">ハイボール</span>
-      <span class="lang en tab-font" style="display: none;">Highball</span>
-      <span class="lang de tab-font" style="display: none;">Highball</span>
-    </button>
-  </div>
+  <button class="tab-button active" onclick="showTab('vorspeise', event)">
+    <span class="lang ja tab-jp-font">前菜</span>
+    <span class="lang en tab-font" style="display: none;">Appetizer</span>
+    <span class="lang de tab-font" style="display: none;">Vorspeise</span>
+  </button>
+  <button class="tab-button" onclick="showTab('salad', event)">
+    <span class="lang ja tab-jp-font">サラダ</span>
+    <span class="lang en tab-font" style="display: none;">Salad</span>
+    <span class="lang de tab-font" style="display: none;">Salat</span>
+  </button>
+  <button class="tab-button" onclick="showTab('grill', event)">
+    <span class="lang ja tab-jp-font">炭火焼き</span>
+    <span class="lang en tab-font" style="display: none;">Charcoal Grill</span>
+    <span class="lang de tab-font" style="display: none;">Holzkohlengrill</span>
+  </button>
+  <button class="tab-button" onclick="showTab('sushi', event)">
+    <span class="lang ja tab-jp-font">寿司</span>
+    <span class="lang en tab-font" style="display: none;">Sushi</span>
+    <span class="lang de tab-font" style="display: none;">Sushi</span>
+  </button>
+  <button class="tab-button" onclick="showTab('frittierter', event)">
+    <span class="lang ja tab-jp-font">揚げ物</span>
+    <span class="lang en tab-font" style="display: none;">Fried Dishes</span>
+    <span class="lang de tab-font" style="display: none;">Frittierte Speisen</span>
+  </button>
+  <button class="tab-button" onclick="showTab('donburi', event)">
+    <span class="lang ja tab-jp-font">丼もの</span>
+    <span class="lang en tab-font" style="display: none;">Donburi</span>
+    <span class="lang de tab-font" style="display: none;">Reisschalen</span>
+  </button>
+  <button class="tab-button" onclick="showTab('rice&noodle', event)">
+    <span class="lang ja tab-jp-font">ご飯＆麺</span>
+    <span class="lang en tab-font" style="display: none;">Rice & Noodles</span>
+    <span class="lang de tab-font" style="display: none;">Reis & Nudeln</span>
+  </button>
+  <button class="tab-button" onclick="showTab('kushitei-menu', event)">
+    <span class="lang ja tab-jp-font">串亭メニュー</span>
+    <span class="lang en tab-font" style="display: none;">Kushitei Menu</span>
+    <span class="lang de tab-font" style="display: none;">Kushitei-Menü</span>
+  </button>
+  <button class="tab-button" onclick="showTab('dessert', event)">
+    <span class="lang ja tab-jp-font">デザート</span>
+    <span class="lang en tab-font" style="display: none;">Dessert</span>
+    <span class="lang de tab-font" style="display: none;">Dessert</span>
+  </button>
+  <button class="tab-button" onclick="showTab('cold-drinks', event)">
+    <span class="lang ja tab-jp-font">冷たい飲み物</span>
+    <span class="lang en tab-font" style="display: none;">Cold Drinks</span>
+    <span class="lang de tab-font" style="display: none;">Kalte Getränke</span>
+  </button>
+  <button class="tab-button" onclick="showTab('hot-drinks', event)">
+    <span class="lang ja tab-jp-font">温かい飲み物</span>
+    <span class="lang en tab-font" style="display: none;">Hot Drinks</span>
+    <span class="lang de tab-font" style="display: none;">Warme Getränke</span>
+  </button>
+  <button class="tab-button" onclick="showTab('beer', event)">
+    <span class="lang ja tab-jp-font">ビール</span>
+    <span class="lang en tab-font" style="display: none;">Beer</span>
+    <span class="lang de tab-font" style="display: none;">Bier</span>
+  </button>
+  <button class="tab-button" onclick="showTab('wine', event)">
+    <span class="lang ja tab-jp-font">ワイン</span>
+    <span class="lang en tab-font" style="display: none;">Wine</span>
+    <span class="lang de tab-font" style="display: none;">Wein</span>
+  </button>
+  <button class="tab-button" onclick="showTab('plumwine', event)">
+    <span class="lang ja tab-jp-font">梅酒</span>
+    <span class="lang en tab-font" style="display: none;">Plum Wine</span>
+    <span class="lang de tab-font" style="display: none;">Pflaumenwein</span>
+  </button>
+  <button class="tab-button" onclick="showTab('shochu', event)">
+    <span class="lang ja tab-jp-font">焼酎</span>
+    <span class="lang en tab-font" style="display: none;">Shochu</span>
+    <span class="lang de tab-font" style="display: none;">Shochu</span>
+  </button>
+  <button class="tab-button" onclick="showTab('sake', event)">
+    <span class="lang ja tab-jp-font">日本酒</span>
+    <span class="lang en tab-font" style="display: none;">Sake (Rice Wine)</span>
+    <span class="lang de tab-font" style="display: none;">Sake (Reiswein)</span>
+  </button>
+  <button class="tab-button" onclick="showTab('chuhai', event)">
+    <span class="lang ja tab-jp-font">酎ハイ</span>
+    <span class="lang en tab-font" style="display: none;">Chuhai</span>
+    <span class="lang de tab-font" style="display: none;">Chuhai</span>
+  </button>
+  <button class="tab-button" onclick="showTab('highball', event)">
+    <span class="lang ja tab-jp-font">ハイボール</span>
+    <span class="lang en tab-font" style="display: none;">Highball</span>
+    <span class="lang de tab-font" style="display: none;">Highball</span>
+  </button>
+</div>
+
   
 
   <!-- Vorspeise タブ -->
