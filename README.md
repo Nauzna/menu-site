@@ -1,6 +1,6 @@
 # menu-site プロジェクト
 
-このリポジトリは、串亭ミュンヘンのWebメニューサイト（https://nauzna.github.io/menu-site/）を管理・公開するためのものです。
+このリポジトリは、串亭ミュンヘンのWebメニューサイト（<https://nauzna.github.io/menu-site/>）を管理・公開するためのものです。
 
 このページでは、Git や GitHub にあまり慣れていない方でも、安心して編集・更新できるように手順をまとめています。
 
