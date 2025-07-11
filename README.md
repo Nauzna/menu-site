@@ -33,7 +33,8 @@
 2. 画像ファイル名を確認する  
 - index.html を開き、画像が読み込まれていない箇所の img src を確認してください。  
 例：
-’<img src="Fried/ebiten.jpg">’
+```html
+<img src="Fried/ebiten.jpg">
  → 「ebiten.jpg」というファイル名で保存する必要があります。  
 (自分で新しくファイル名を決めたい場合は、index.html 側の該当箇所をそのファイル名に合わせて書き換えてもOKです。)
 3. 正しいフォルダに保存する  
